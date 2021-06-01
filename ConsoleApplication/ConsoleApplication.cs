@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Numerics;
+///using System.Numerics;
 
 namespace CshConsoleAPI
 {
@@ -22,9 +22,12 @@ namespace CshConsoleAPI
 
          // Assign the echo command function to the command list.
          CommandsApi.CommandAdd(ref pCommands, AppCommands.CMD_ECHO, AppCommands.CommandEcho);
-
-         // Store user input text.
-         string command_line;
+         CommandsApi.CommandAdd(ref pCommands, AppCommands.CMD_ADD, AppCommands.CommandADD);
+         CommandsApi.CommandAdd(ref pCommands, AppCommands.CMD_SUB, AppCommands.CommandSUB);
+         CommandsApi.CommandAdd(ref pCommands, AppCommands.CMD_MULT, AppCommands.CommandMULT);
+         CommandsApi.CommandAdd(ref pCommands, AppCommands.CMD_DIV, AppCommands.CommandDIV);
+            // Store user input text.
+            string command_line;
 
          // Continues loop.
          while (running)
