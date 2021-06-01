@@ -46,7 +46,10 @@ namespace CshConsoleAPI
 		}
 
 
-
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <returns></returns>
 
 		/***
 		* Creating a new commands list.
